@@ -20,7 +20,7 @@
                          <tr>
                               <th scope="row">{{ $diarista->id }}</th>
                               <td>{{ $diarista->nome_completo }}</td>
-                              <td>{{ $diarista->telefone }}</td>
+                              <td>{{ \Clemdesign\PhpMask\Mask::apply($diarista->telefone,'(00) 00000-0000') }}</td>
                               <td>
                                    <a 
                                         class="btn btn-primary"
